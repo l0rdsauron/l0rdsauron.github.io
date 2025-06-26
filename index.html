@@ -20,6 +20,14 @@
   "url": "https://www.parknadstrumykiem.org"
 }
 </script>
+<script>
+  const burger = document.getElementById('burgerBtn');
+  const nav = document.getElementById('mainNav');
+
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+</script>
 <!-- HTML Meta Tags -->
 <title>Park nad Strumykiem – Osiedle w Józefosławiu</title>
 <meta charset="UTF-8" />
@@ -118,7 +126,7 @@ header a:hover {
 <img alt="Logo Park Nad Strumykiem" src="images/logo.png" style="height: 100px; margin-right: 12px;"/>
 <span style="font-size: 22px; font-weight: 600; color: #2c2c2c;">PARK NAD STRUMYKIEM</span>
 </div>
-<div style="display: flex; gap: 20px;">
+<!--<div style="display: flex; gap: 20px;">
 <a href="#top">Strona główna</a>
 <a href="#zarzad">Zarząd</a>
 <a href="#oosiedlu">O osiedlu</a>
@@ -126,7 +134,22 @@ header a:hover {
 <a href="https://www.facebook.com/groups/osiedlenadstrumykiem" target="_blank">Forum</a>
     
 
-</div>
+</div> --> 
+
+  <header class="main-header">
+  <div class="logo">Park nad Strumykiem</div>
+  <nav class="main-nav" id="mainNav">
+    <ul>
+      <li><a href="#home">Strona główna</a></li>
+      <li><a href="#oosiedlu">O osiedlu</a></li>
+      <li><a href="#zarzad">Zarząd i administracja</a></li>
+       <li><a href="https://familoc.pl/home/pl/auth/login" target="_blank">Logowanie</a></li>
+      <li><a href="https://www.facebook.com/groups/osiedlenadstrumykiem" target="_blank">Forum</a></li>
+    </ul>
+  </nav>
+
+  <div class="burger" id="burgerBtn">&#9776;</div>
+</header>
 </div>
 </header>
 <section class="hero" id="top">
