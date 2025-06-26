@@ -215,5 +215,74 @@ p {
   line-height: 1.6;
   margin-bottom: 20px;
 }
+/* Styl nagłówka */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Logo */
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+/* Menu domyślne */
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Burger ukryty na desktopie */
+.burger {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+}
+
+/* MOBILE – burger menu */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .main-nav.open {
+    display: block;
+  }
+}
+
 
 
