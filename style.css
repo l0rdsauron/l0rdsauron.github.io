@@ -177,3 +177,43 @@ p {
   margin-bottom: 20px;
 }
 
+.admin-section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #111;
+}
+
+.admin-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.admin-left, .admin-right {
+  flex: 1 1 45%;
+}
+
+.admin-logo, .security-logo {
+  max-width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+  display: block;
+}
+
+h2 {
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
