@@ -215,7 +215,8 @@ p {
   line-height: 1.6;
   margin-bottom: 20px;
 }
-/* Styl nagłówka */
+/* burger Menu style */
+
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -229,7 +230,7 @@ p {
 }
 
 /* Logo */
-.logo {
+.logo2 {
   font-weight: bold;
   font-size: 20px;
   letter-spacing: 1px;
