@@ -28,9 +28,16 @@ nav ul li a {
     color: #333;
     font-weight: bold;
 }
+
 .hero {
-    position: relative;
+  background-image: url('images/hero_osiedle.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px; /* możesz dobrać wartość */
+  position: relative;
 }
+
 .hero img {
     width: 100%;
     height: auto;
