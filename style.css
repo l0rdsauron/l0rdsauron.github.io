@@ -218,7 +218,7 @@ p {
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 450px; /* możesz zwiększyć np. do 400px w zależności od efektu */
+    min-height: 300px; /* możesz zwiększyć np. do 400px w zależności od efektu */
     position: relative;
   }
   .hero-image {
