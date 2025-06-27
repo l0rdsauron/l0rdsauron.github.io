@@ -115,7 +115,7 @@ header a:hover {
 </style></head>
 <body id="top">
 <header class="main-header">
-  <div class="logo2">Park nad Strumykiem v1.15</div>
+  <div class="logo2">Park nad Strumykiem v1.16</div>
 
   <nav class="main-nav" id="mainNav">
     <ul>
@@ -181,12 +181,21 @@ To miejsce stworzone z myślą o wygodzie i jakości życia.</p> <P></P>Dzięki 
 <p style="font-size:0.9em;">© 2025 Stowarzyszenie Mieszkańców Osiedla "Park Nad Strumykiem". Wszelkie prawa zastrzeżone.</p>
 </footer>
     <script>
-  const burger = document.getElementById('burgerBtn');
-  const nav = document.getElementById('mainNav');
+ const burger = document.getElementById('burgerBtn');
+const nav = document.getElementById('mainNav');
 
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('open');
+// otwieranie menu
+burger.addEventListener('click', () => {
+  nav.classList.toggle('open');
+});
+
+// zamykanie menu po kliknięciu w dowolny link
+const navLinks = nav.querySelectorAll('a');
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('open');
   });
+});
 </script>
 </body>
 </html>
