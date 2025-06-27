@@ -20,14 +20,6 @@
   "url": "https://www.parknadstrumykiem.org"
 }
 </script>
-<script>
-  const burger = document.getElementById('burgerBtn');
-  const nav = document.getElementById('mainNav');
-
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('open');
-  });
-</script>
     
 <!-- HTML Meta Tags -->
     
@@ -122,9 +114,8 @@ header a:hover {
 }
 </style></head>
 <body id="top">
-    
 <header class="main-header">
-  <div class="logo2">Park nad Strumykiem v1.3</div>
+  <div class="logo2">Park nad Strumykiem v1.4</div>
 
   <nav class="main-nav" id="mainNav">
     <ul>
@@ -188,5 +179,13 @@ To miejsce stworzone z myślą o wygodzie i jakości życia.</p> <P></P>Dzięki 
     </a> | <a href="https://familoc.pl/home/pl/auth/login" style="color:#fff;" target="_blank">Panel mieszkańca (Familoc)</a></p>
 <p style="font-size:0.9em;">© 2025 Stowarzyszenie Mieszkańców Osiedla "Park Nad Strumykiem". Wszelkie prawa zastrzeżone.</p>
 </footer>
+    <script>
+  const burger = document.getElementById('burgerBtn');
+  const nav = document.getElementById('mainNav');
+
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+</script>
 </body>
 </html>
