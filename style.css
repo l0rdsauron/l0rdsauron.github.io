@@ -219,7 +219,7 @@ p {
 
 @media (max-width: 768px) {
   .main-nav {
-    display: none; /* ukryj menu domyślnie w mobile */
+    display: block; 
     position: absolute;
     top: 60px;
     right: 20px;
@@ -238,7 +238,7 @@ p {
     gap: 10px;
   }
   .burger {
-    display: block; /* pokaż burger w mobile */
+    display: none; /* pokaż burger w mobile */
   }
 }
 
