@@ -221,6 +221,12 @@ p {
     min-height: 300px; /* możesz zwiększyć np. do 400px w zależności od efektu */
     position: relative;
   }
+
+ .hero h1 {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
   .hero-image {
     width: 100%;
     height: 100%;
