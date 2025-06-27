@@ -215,6 +215,21 @@ p {
   line-height: 1.6;
   margin-bottom: 20px;
 }
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+  .hero p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .overlay {
+    padding: 20px; /* żeby nie było zbyt ściśnięte przy krawędziach */
+  }
+}
 /* burger Menu style */
 
 /* ========== DESKTOP ========== */
